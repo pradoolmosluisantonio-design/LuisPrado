@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a JS</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+  <script>
+
+  </script>
+</head>
+<body>
+    <header>
+        <h1>!JavaScript!</h1>
+    </header>
+    <section>
+    <script>
+    let num1, num2, num3, num4, num5;
+    num1 = prompt("Introduce el primer numero: ");
+    num1 = parseInt(num1);
+
+    num2 = parseFloat(prompt("Introduce el segundo numero: "));
+
+    let suma = num1 + num2;
+    let resta = num1 - num2;
+    let multiplicacion = num1 * num2;
+    let division = num1 / num2;
+    let mod = num1 % num2;
+    let cadena = num1 + num2.toString();
+
+    document.write('<h1>Operadores aritmeticos</h1><br/>');
+    document.write('La suma de: '+num1+' + '+num2+'='+suma+'<br/>');
+    document.write('La resta de: '+num1+' - '+num2+'='+resta+'<br/>');
+    document.write('La multiplicacion de: '+num1+' * '+num2+'='+multiplicacion+'<br/>');
+    document.write('La division de: '+num1+' / '+num2+'='+division+'<br/>');
+    document.write('El mod de: '+num1+' % '+num2+'='+mod+'<br/>');
+    document.write('La cadena de: '+num1+' + '+num2+'='+cadena+'<br/>');
+    num3 = parseFloat(prompt("Introduce la primer calificacion: "));
+    num4 = parseFloat(prompt("Introduce la segunda calificacion: "));
+    num5 = parseFloat(prompt("Introduce la tercera calificacion: "));
+
+    let promedio = (num3 + num4 + num5) / 3;
+
+    document.write('El promedio es: ' + promedio);
+
+
+    console.log("Calificación 1:", num3, "Tipo:", typeof num3);
+    console.log("Calificación 2:", num4, "Tipo:", typeof num4);
+    console.log("Calificación 3:", num5, "Tipo:", typeof num5);
+    console.log("Promedio:", promedio, "Tipo:", typeof promedio);
+
+    </script>
+    </section>
+    <footer>- lapo
+
+    </footer>
+    <script src="js/script.js">
+
+    </script>
+</body>
+</html>
